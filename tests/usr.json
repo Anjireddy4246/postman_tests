@@ -7,6 +7,20 @@
 	"item": [
 		{
 			"name": "http://13.234.5.9:8080//v1/login",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "378cfeae-bc1e-411c-9f1b-7a5f9fe93adc",
+						"exec": [
+							"pm.test(\"response is ok\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"request": {
 				"method": "POST",
 				"header": [
