@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "abbb5c6d-19dd-4f18-a2ca-c87213d16dce",
+		"name": "USER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://13.234.5.9:8080//v1/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"loginId\":\"technosoft\",\n\t\"password\":\"technosoft\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://13.234.5.9:8080//v1/login",
+					"protocol": "http",
+					"host": [
+						"13",
+						"234",
+						"5",
+						"9"
+					],
+					"port": "8080",
+					"path": [
+						"",
+						"v1",
+						"login"
+					],
+					"query": [
+						{
+							"key": "loginId",
+							"value": "technosoft",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "technosoft",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
